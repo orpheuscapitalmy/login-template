@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Raya</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/brands.min.js" integrity="sha512-DVS2SDsNMrQQMlbdcnmPtMdtOeqas4WRl06II/v/iMBRda50NUHHiI8z5Kv3WFu6OCCZYyObCXa9oSHcR4bz4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            background: url(https://img.freepik.com/free-vector/realistic-ramadan-background_23-2151351394.jpg);
+            /* background: url(https://i.pinimg.com/736x/48/40/46/484046673e5ccf6d092db205f1814e4a.jpg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 40px 20px;
+        }
+
+        /* Snow */
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            place-items: center;
+            background: #f6f6f6;
+            width: min(1000px, 95%);
+            border-radius: 20px;
+        }
+
+        /* Left Side */
+
+        .left-side {
+            /* height: 60vh; */
+            height: auto;
+            /* width: 100%; */
+            background-image: url(https://app2.orpheuscapital.com.my/images/background-image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            pointer-events: none;
+            border-radius: 20px 0 0 20px;
+            display: block;
+        }
+
+        /* .login-img{
+            height: 100%;
+            width: 100%;
+        } */
+
+        /* Right Side */
+
+        .right-side {
+            padding: 10px;
+            background-color: white;
+            border-radius: 0 20px 20px 0;
+            /* height: 60vh; */
+            height: 100%;
+        }
+
+        .float-rights{
+            justify-content: end;
+        }
+
+
+        @media (max-width: 770px) {
+            .login-area {
+                flex-direction: column-reverse;
+            }
+
+            .left-side {
+                display: none;
+            }
+
+            .right-side {
+                height: 100%;
+                border-radius: 0 0 0 0;
+            }
+        }
+
+    </style>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+</head>
+
+<body translate="no">
+
+    <body>
+        <div id="particles-js" class="snow"></div>
+        <div class="container">
+            <div class="row login-area">
+                <div class="col-md-7 col-sm-12 col-12 left-side">
+                </div>
+                <div class="col-md-5 col-sm-12 col-12 right-side">
+
+                    <div class="row float-rights">
+                        <div class="col-md-4">
+                            <select name="language" class="form-control custom-dropdown language">
+                                <option value="en">English</option>
+                                <option value="bm">Melayu</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="img/logo.png" style="width: 55%;max-width: 55%;height: auto;">
+                            <h3><b>Welcome</b></h3>
+                            <span style="font-size:18px">Log In now to explore Orpheus services</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row px-3">
+                        <div class="col-md-12">
+
+                            <form action="#">
+                            
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+    
+                                <div class="form-group">
+                                    <button type=submit class="btn btn-block btn-primary">
+                                        Log In
+                                    </button>
+                                </div>
+    
+                                <div class="form-group">
+                                    <span>Trouble logging in?</span>
+                                    <a href="#">
+                                        Reset password
+                                    </a>
+                                </div>
+    
+                                <div class="form-group">
+                                    <span>No Account?</span>
+                                    <a href="#">
+                                        Create Account
+                                    </a>
+                                </div>
+    
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js'></script>
+
+    <script id="rendered-js">
+        
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 310,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+
+
+                color: {
+                    value: "#e33d2d"
+                },
+
+                shape: {
+                    type: "image", // Specify the type as "image"
+                    image: {
+                        src: "https://cdn-icons-png.flaticon.com/512/4358/4358722.png",
+                        // src: "https://static.vecteezy.com/system/resource?s/previews/019/006/277/original/money-cash-icon-png.png",
+                        width: 100, // Set the desired width
+                        height: 100 // Set the desired height
+                    },
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+
+                    polygon: {
+                        nb_sides: 5
+                    }
+                },
+
+
+                opacity: {
+                    value: 1,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+
+
+                size: {
+                    value: 20,
+                    random: true,
+                    anim: {
+                        enable: false
+                    }
+                },
+
+
+                line_linked: {
+                    enable: false
+                },
+
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "bottom",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            retina_detect: true
+        });
+        //# sourceURL=pen.js
+    </script>
+
+
+</body>
+
+</html>
